@@ -4,6 +4,11 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    {
+      'leftComma': '""',
+      'rightcomma': '""'
+
+    }
   ],
   theme: {
     extend: {
@@ -12,6 +17,10 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
+      }
+      
     },
   },
   plugins: [],
